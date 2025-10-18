@@ -1,0 +1,42 @@
+name: Make PAC and upload artifact
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'  # hourly, adjust as needed
+
+jobs:
+  make-pac:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure script is executable
+        run: |
+          if [ -f scripts/check_and_make_pac.sh ]; then
+            chmod +x scripts/check_and_make_pac.sh
+          fi
+
+      - name: Run proxy check & make PAC
+        run: |
+          bash scripts/check_and_make_pac.sh || true
+
+      - name: List outputs
+        run: |
+          echo "Files in workspace:"
+          ls -la
+
+      - name: Upload PAC artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: proxies-pac
+          path: |
+            proxies.pac
+            proxies_ok.txt
+            proxies_failed.txt
+            proxies_obf.pac
+            scripts/check_and_make_pac_obf_strong.sh
+            proxies_obf_strong.pac
+            scripts/check_and_make_pac_obf.sh
