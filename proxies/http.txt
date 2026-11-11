@@ -1,1 +1,1 @@
-<tr><td class='fpl-ip'>38.242.158.117<span class='fpl-port'>:9050</span>:SOCKS4
+<tr><td class='fpl-ip'>41.65.103.168<span class='fpl-port'>:8080</span>:HTTP

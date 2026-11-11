@@ -1,1 +1,1 @@
-<tr><td class='fpl-ip'>118.69.134.153<span class='fpl-port'>:20000</span>:VN</td><td class='hm'>Vietnam
+<tr><td class='fpl-ip'>46.175.122.206<span class='fpl-port'>:1080</span>:RU</td><td class='hm'>Russian Federation
