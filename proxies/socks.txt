@@ -1,1 +1,1 @@
-<tr><td class='fpl-ip'>88.84.204.217<span class='fpl-port'>:1080</span>:RU</td><td class='hm'>Russian Federation
+<tr><td class='fpl-ip'>142.54.228.193<span class='fpl-port'>:4145</span>:US</td><td class='hm'>United States
