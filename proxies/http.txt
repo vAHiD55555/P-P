@@ -1,1 +1,1 @@
-<tr><td class='hd-ip'>194.182.163.117:3128:CH</td><td class='hd-anon'>Elite
+<tr><td class='hd-ip'>45.194.3.108:8080:IN</td><td class='hd-anon'>Anonymous
